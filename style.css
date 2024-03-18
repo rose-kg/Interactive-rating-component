@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    background-color: hsl(216, 12%, 8%);
+ }
+
+ /* Rating state start  */
+ .container{
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 410px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding-left: 30px;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+ } 
+
+ .numbers ol li{
+   display: inline-block;
+   list-style: none;
+   background-color: hsl(216, 12%, 54%);
+   padding: 15px 20px;
+   border-radius: 50%;
+   color: hsl(0, 0%, 100%);
+   margin-top: 20px;
+   margin-right: 20px; 
+   height: 50px;
+   width: 50px;
+   font-size: 17px;
+ }
+ .numbers ol li:first-child{
+  padding-left: 22px;
+ }
+
+ .numbers ol li:hover{
+  background-color: hsl(217, 12%, 63%);
+  cursor: pointer;
+ }
+
+ .star-icon{
+   background-color: hsl(216, 12%, 54%);
+   margin-top: 40px;
+   padding:  15px 15px ;
+   border-radius: 50%;
+   height: 45px;
+   width: 45px;
+   margin-top: 30px;
+ }
+
+.question{
+   color: hsl(0, 0%, 100%);
+   margin-top: 20px;
+   font-family: "Overpass", sans-serif;
+   font-weight: 700;
+ }
+ 
+ p{
+   font-size: 15px;
+   color: hsl(217, 12%, 63%);
+   margin-top: 15px; 
+  line-height: 25px;
+ }
+
+ .submit button{
+   margin-top: 30px;
+   width: 340px;
+   padding: 14px;
+   background-color: hsl(25, 97%, 53%);
+   border: none;
+   border-radius: 40px;
+   color: hsl(0, 0%, 100%);
+   font-family: "Overpass", sans-serif;
+   font-weight: 400;
+   letter-spacing: 2px;
+   font-size: medium;
+ }
+
+ .submit button:hover{
+  background-color:  hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+ }
+ /* Rating state end  */
+
+/* Thank you state start  */
+ .thank-you-container{
+  display: none;
+  background-color: hsl(213, 19%, 18%);
+  width: 400px;
+  height: 410px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding-left: 10px;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+ .card-machine{
+  width: 180px;
+  margin-top: 40px;
+  margin-left: 100px;
+ }
+
+ h3{
+  margin-top: 30px;
+  margin-left: 100px;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 180px;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(216, 12%, 54%);
+  border-radius: 20px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+ }
+
+.thank-you-text{
+color: hsl(0, 0%, 100%);
+margin-left: 110px;
+margin-top: 25px;
+font-size: 30px;
+font-family: "Overpass", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;
+}
+
+
+.paragraph{
+  white-space: pre;
+  margin-top: -10px;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+
+ .attribution { 
+   font-size: 11px; 
+   text-align: center; 
+   /* margin-top: 570px; */
+   color: white;
+   position: absolute;
+   top: 80%;
+   left: 50%;
+   transform: translateX(-50%); 
+}
+
+ .attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+/* Thank you state end */
+
+/* Mobile design starts here */
+
+@media (max-width: 768px){
+  .container {
+      max-width: none; 
+      padding-left: 30px;
+      height: 58%;  
+  }
+  
+  br{
+    display: none;
+  }
+
+  p{
+    white-space: pre;
+  }
+
+.thank-you-container {
+  max-width: none; 
+  height: 58%;  
+}
+}
+
+/* Mobile design ends here */
+
+
+
+
+
